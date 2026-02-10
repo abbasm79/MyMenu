@@ -34,8 +34,8 @@ const elements = {
     `;
 }*/
 
-// دالة مساعدة ذكية تعمل محلياً وعلى الإنترنت
-function getIconHTML(iconFile, altText, fallbackIcon = '🍽️') {
+// دالة مساعدة للحصول على الأيقونة - بدون رموز تعبيرية
+function getIconHTML(iconFile, altText) {
     // تحديد إذا كنا على GitHub Pages أو محلياً
     const isGitHubPages = window.location.hostname.includes('github.io');
     
@@ -50,20 +50,12 @@ function getIconHTML(iconFile, altText, fallbackIcon = '🍽️') {
         iconPath = `icon/${iconFile}`;
     }
     
-    // إضافة timestamp لمنع التخزين المؤقت
-    const timestamp = new Date().getTime();
-    const cacheBusterUrl = `${iconPath}?v=${timestamp}`;
-    
     return `
-        <div class="icon-wrapper">
-            <img src="${cacheBusterUrl}" 
-                 alt="${altText}"
-                 class="icon-image"
-                 onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div class=\"fallback-icon\">${fallbackIcon.replace(/'/g, "\\'")}</div>
-        </div>
+        <img src="${iconPath}" 
+             alt="${altText}"
+             class="icon-image">
     `;
 }
-
 // تحميل البيانات من ملف JSON - بدون دوال خطيرة
 async function loadData() {
     try {
@@ -570,5 +562,4 @@ function setupEventListeners() {
 }
 
 // بدء التطبيق
-
 document.addEventListener('DOMContentLoaded', loadData);
