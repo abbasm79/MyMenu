@@ -1,0 +1,214 @@
+{
+  "languages": {
+    "ar": {
+      "categories": "الفئات",
+      "allItems": "جميع الأصناف",
+      "addToOrder": "أضف للطلب",
+      "order": "الطلب",
+      "total": "المجموع",
+      "orderNow": "اطلب الآن",
+      "clearOrder": "مسح الطلب",
+      "noItems": "لا توجد أصناف في الطلب",
+      "items": "الأصناف",
+      "price": "السعر",
+      "quantity": "الكمية",
+      "subtotal": "المجموع الفرعي"
+    },
+    "ckb": {
+      "categories": "به‌شه‌كان",
+      "allItems": "هەموو خواردنەکان",
+      "addToOrder": "زیادکردن بۆ داواکاری",
+      "order": "داواکاری",
+      "total": "کۆی گشتی",
+      "orderNow": "داواکاری بکە",
+      "clearOrder": "سڕینەوەی داواکاری",
+      "noItems": "هیچ خواردنێک لە داواکاریدا نییە",
+      "items": "خواردنەکان",
+      "price": "نرخ",
+      "quantity": "ژمارە",
+      "subtotal": "کۆی فرعی"
+    }
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name_ar": "المشويات",
+      "name_ckb": "برژاوەكان",
+      "icon": "mashwyat.png"  
+    },
+    {
+      "id": 2,
+      "name_ar": "البيتزا",
+      "name_ckb": "پیتزاكان",
+      "icon": "bigpizza.png"  
+    },
+    {
+      "id": 3,
+      "name_ar": "المشروبات",
+      "name_ckb": "خواردنەوه‌كان",
+      "icon": "drinks.png"    
+    }
+  ],
+  "menuItems": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "name_ar": "كباب لحم",
+      "name_ckb": "كه‌بابی گۆشت",
+      "description_ar": "كباب لحم ضأن مشوي على الفحم",
+      "description_ckb": "كه‌بابی گۆشتی كاوڕ برژاو له‌سه‌ر خه‌ڵوز",
+      "price": 4000,
+      "icon": "meatkebab.png"
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "name_ar": "كباب دجاج",
+      "name_ckb": "كه‌بابی مریشك",
+      "description_ar": "كباب دجاج مشوي مع الخضار",
+      "description_ckb": "كه‌بابی مریشك برژاو له‌گه‌ڵ سەوزە",
+      "price": 3000,
+      "icon": "chickenkebab.png"
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "name_ar": "تكة لحم",
+      "name_ckb": "تكه‌ی گۆشت",
+      "description_ar": "قطع لحم ضأن مشوية",
+      "description_ckb": "پارچه‌ گۆشتی كاوڕ برژاو",
+      "price": 4000,
+      "icon": "tka.png"
+    },
+    {
+      "id": 4,
+      "categoryId": 1,
+      "name_ar": "تكة دجاج",
+      "name_ckb": "تكه‌ی مریشك",
+      "description_ar": "قطع دجاج مشوية",
+      "description_ckb": "تكه‌ی مریشك برژاو",
+      "price": 3000,
+      "icon": "chickentka.png"
+    },
+    {
+      "id": 5,
+      "categoryId": 1,
+      "name_ar": "سمك مشوي",
+      "name_ckb": "ماسی برژاو",
+      "description_ar": "سمك مشوي على الفحم",
+      "description_ckb": "ماسی برژاو له‌سه‌ر خه‌ڵوز",
+      "price": 25000,
+      "icon": "fish.png"
+    },
+    {
+      "id": 6,
+      "categoryId": 2,
+      "name_ar": "بيتزا كبير",
+      "name_ckb": "پیتزای گه‌وره‌",
+      "description_ar": "بيتزا كبير بالجبن والخضار",
+      "description_ckb": "پیتزای گه‌وره‌ به‌ پەنیر و سەوزە",
+      "price": 8000,
+      "icon": "bigpizza.png"
+    },
+    {
+      "id": 7,
+      "categoryId": 2,
+      "name_ar": "بيتزا وسط",
+      "name_ckb": "پیتزای مامناوه‌ند",
+      "description_ar": "بيتزا وسط بالجبن واللحم",
+      "description_ckb": "پیتزای مامناوه‌ند به‌ پەنیر و گۆشت",
+      "price": 5000,
+      "icon": "middlepizza.png"
+    },
+    {
+      "id": 8,
+      "categoryId": 2,
+      "name_ar": "بيتزا صغير",
+      "name_ckb": "پیتزای بچووك",
+      "description_ar": "بيتزا صغير بالجبن فقط",
+      "description_ckb": "پیتزای بچووك ته‌نها به‌ پەنیر",
+      "price": 3000,
+      "icon": "smallpizza.png"
+    },
+    {
+      "id": 9,
+      "categoryId": 2,
+      "name_ar": "بيتزا مرغريتا",
+      "name_ckb": "پیتزای مارگریتا",
+      "description_ar": "بيتزا مرغريتا مع الجبن والطماطم",
+      "description_ckb": "پیتزای مارگریتا له‌گه‌ڵ پەنیر و تەماتە",
+      "price": 3500,
+      "icon": "margrittaPizza.png"
+    },
+    {
+      "id": 10,
+      "categoryId": 3,
+      "name_ar": "ببسي كولا",
+      "name_ckb": "بیبسی كۆلا",
+      "description_ar": "مشروب غازي ببسي كولا",
+      "description_ckb": "خواردنەوه‌ی گازی بیبسی كۆلا",
+      "price": 500,
+      "icon": "pepsi.png"
+    },
+    {
+      "id": 11,
+      "categoryId": 3,
+      "name_ar": "سفن أب",
+      "name_ckb": "سه‌ڤن ئاپ",
+      "description_ar": "مشروب غازي سفن أب",
+      "description_ckb": "خواردنەوه‌ی گازی سه‌ڤن ئاپ",
+      "price": 500,
+      "icon": "Seven-Up.png"
+    },
+    {
+      "id": 12,
+      "categoryId": 3,
+      "name_ar": "ماء",
+      "name_ckb": "ئاو",
+      "description_ar": "ماء معدني",
+      "description_ckb": "ئاوی معدنی",
+      "price": 250,
+      "icon": "water.png"
+    },
+    {
+      "id": 13,
+      "categoryId": 3,
+      "name_ar": "عصير برتقال",
+      "name_ckb": "شه‌ربه‌تی پرته‌قاڵ",
+      "description_ar": "عصير برتقال طازج",
+      "description_ckb": "شه‌ربه‌تی پرته‌قاڵی فرێش",
+      "price": 1500,
+      "icon": "orangejuice.png"
+    },
+    {
+      "id": 14,
+      "categoryId": 3,
+      "name_ar": "عصير رمان",
+      "name_ckb": "شه‌ربه‌تی هه‌نار",
+      "description_ar": "عصير رمان طازج",
+      "description_ckb": "شه‌ربه‌تی هه‌ناری فرێش",
+      "price": 2000,
+      "icon": "pomegranatejuice.png"
+    },
+    {
+      "id": 15,
+      "categoryId": 3,
+      "name_ar": "لبن",
+      "name_ckb": "دۆ",
+      "description_ar": "لبن طازج",
+      "description_ckb": "دۆی سارد",
+      "price": 1000,
+      "icon": "milk.png"
+    },
+    {
+      "id": 16,
+      "categoryId": 3,
+      "name_ar": "شاي",
+      "name_ckb": "چای",
+      "description_ar": "شاي ساخن",
+      "description_ckb": "چای گه‌رم",
+      "price": 500,
+      "icon": "tea.png"
+    }
+  ]
+}
