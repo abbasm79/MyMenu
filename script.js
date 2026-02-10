@@ -35,26 +35,20 @@ const elements = {
 }*/
 
 // دالة مساعدة للحصول على الأيقونة - بدون رموز تعبيرية
+// دالة ذكية تعمل في جميع البيئات
 function getIconHTML(iconFile, altText) {
-    // تحديد إذا كنا على GitHub Pages أو محلياً
-    const isGitHubPages = window.location.hostname.includes('github.io');
-    
-    // بناء المسار الصحيح
-    let iconPath;
-    if (isGitHubPages) {
-        // على GitHub Pages: حساب المسار من رابط الموقع
-        const repoName = window.location.pathname.split('/')[1] || 'MyMenu';
-        iconPath = `/${repoName}/icon/${iconFile}`;
-    } else {
-        // محلياً: استخدام المسار النسبي
-        iconPath = `icon/${iconFile}`;
+    // 1. إذا كنا على GitHub Pages
+    if (window.location.hostname.includes('github.io')) {
+        // رابط GitHub Pages الكامل
+        return `<img src="https://abbasm79.github.io/MyMenu/icon/${iconFile}" 
+                     alt="${altText}" 
+                     class="icon-image">`;
     }
     
-    return `
-        <img src="${iconPath}" 
-             alt="${altText}"
-             class="icon-image">
-    `;
+    // 2. إذا كنا محلياً
+    return `<img src="icon/${iconFile}" 
+                 alt="${altText}" 
+                 class="icon-image">`;
 }
 // تحميل البيانات من ملف JSON - بدون دوال خطيرة
 async function loadData() {
