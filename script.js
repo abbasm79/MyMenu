@@ -59,7 +59,7 @@ function getIconHTML(iconFile, altText, fallbackIcon = '🍽️') {
             <img src="${cacheBusterUrl}" 
                  alt="${altText}"
                  class="icon-image"
-                 onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div class=\"fallback-icon\">${fallbackIcon.replace(/'/g, "\\'")}</div>';">
+                 onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML='<div class=\"fallback-icon\">${fallbackIcon.replace(/'/g, "\\'")}</div>
         </div>
     `;
 }
@@ -570,4 +570,5 @@ function setupEventListeners() {
 }
 
 // بدء التطبيق
+
 document.addEventListener('DOMContentLoaded', loadData);
